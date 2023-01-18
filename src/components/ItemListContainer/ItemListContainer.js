@@ -9,8 +9,8 @@ const ItemListContainer = ({greeting}) =>{
 
     useEffect (() =>{
         setLoading(true)
-        getProducts().then(productssFromApi =>{
-            setProducts(productssFromApi)
+        getProducts().then(productsFromApi =>{
+            setProducts(productsFromApi)
         }).finally(() =>{
             setLoading(false)
         })
