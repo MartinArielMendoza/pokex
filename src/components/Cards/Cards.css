@@ -1,7 +1,9 @@
 .card{
-    box-shadow: 5px 5px 10px gray;
-    margin: 5px;
+    margin: 2px;
     background-color: darkorange;
+    border-style: outset;
+    border-radius: 5%;
+    border-color: black;
 }
 
 .cards{
@@ -15,12 +17,14 @@
 
 .card-item {
     display: flex;
-    padding: 5rem;
+    padding: 30px;
 }
 
 .card-item img{
     width: 10em;
     height: 10em;
+    background-color: rgb(240, 70, 9);
+    border-radius: 50%;
 }
 
 .card-footer{

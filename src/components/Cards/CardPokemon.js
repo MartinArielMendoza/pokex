@@ -21,7 +21,7 @@ export const CardPokemon = ({url}) =>{
                         <img src={data.sprites.front_default} alt="pokemon" />
                     </div>
                     <div className="card-footer">
-                        <p className="card-text text-capitalize">{data.forms[0].name}</p>
+                        <p className="card-text">{data.forms[0].name}</p>
                     </div>
                 </div>
             }
