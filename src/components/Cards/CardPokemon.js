@@ -1,6 +1,7 @@
 import React from "react";
 import {UseFetch} from "../Pokedex/UseFetch";
 import './Cards.css';
+import ItemCount from "../ItemCount/ItemCount";
 
 export const CardPokemon = ({url}) =>{
     const estado=UseFetch(url)
@@ -23,6 +24,9 @@ export const CardPokemon = ({url}) =>{
                     <div className="card-footer">
                         <p className="card-text">{data.forms[0].name}</p>
                     </div>
+                    <footer>
+                    <ItemCount onAdd={(count) => console.log(count)} stock={100}/>
+                    </footer>
                 </div>
             }
         </div>
